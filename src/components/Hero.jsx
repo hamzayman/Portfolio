@@ -5,12 +5,7 @@ export default function Hero() {
       <div className="container">
         <div className="hero-intro">
           <div className="hero-photo-wrap">
-            {/* ── Replace this block with your photo ──
-                <img src="/photo.jpg" alt="Hamza Eid" className="hero-photo" />
-            */}
-            <div className="hero-photo-placeholder" aria-hidden="true">
-              <span>HE</span>
-            </div>
+            <img src="/photo.jpg" alt="Hamza Eid" className="hero-photo" />
           </div>
           <div className="hero-text">
             <h1 className="hero-name">Hamza Eid</h1>
