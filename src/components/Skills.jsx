@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useInView } from '../hooks/useInView'
 
 const groups = [
@@ -9,6 +10,7 @@ const groups = [
 
 export default function Skills() {
   const [ref, inView] = useInView()
+  const [activeSkill, setActiveSkill] = useState(null)
 
   return (
     <section id="skills" ref={ref} className={`section fade-section${inView ? ' in-view' : ''}`}>
@@ -19,7 +21,18 @@ export default function Skills() {
             <div className="skill-group" key={g.title}>
               <h3 className="skill-category">{g.title}</h3>
               <ul className="skill-list">
-                {g.items.map(item => <li key={item}>{item}</li>)}
+                {g.items.map(item => (
+                  <li
+                    key={item}
+                    className={`skill-item${activeSkill === item ? ' active' : ''}`}
+                    onMouseEnter={() => setActiveSkill(item)}
+                    onMouseLeave={() => setActiveSkill(null)}
+                    onClick={() => setActiveSkill(activeSkill === item ? null : item)}
+                  >
+                    <span className="skill-item-bullet">—</span>
+                    <span className="skill-item-text">{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}
