@@ -24,13 +24,13 @@ export default function Hero() {
           ideas into working projects.
         </p>
         <div className="hero-links">
-          <a href="https://github.com/" className="hero-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/hamzayman" className="hero-link" target="_blank" rel="noopener noreferrer">
             GitHub<span className="arrow"> ↗</span>
           </a>
-          <a href="https://linkedin.com/" className="hero-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/hamza--eid" className="hero-link" target="_blank" rel="noopener noreferrer">
             LinkedIn<span className="arrow"> ↗</span>
           </a>
-          <a href="mailto:hamza99ayman250@gmail.com" className="hero-link">
+          <a href="mailto:hamza.ayman.eid@gmail.com" className="hero-link">
             Email<span className="arrow"> ↗</span>
           </a>
         </div>
