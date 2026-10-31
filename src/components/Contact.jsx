@@ -5,9 +5,10 @@ export default function Contact() {
   const [ref, inView] = useInView()
   const [copied, setCopied] = useState(false)
 
+  
   const copyEmail = (e) => {
     e.preventDefault()
-    navigator.clipboard.writeText('hamza99ayman250@gmail.com')
+    navigator.clipboard.writeText('hamza.ayman.eid@gmail.com')
     setCopied(true)
     setTimeout(() => setCopied(false), 2200)
   }
@@ -21,9 +22,9 @@ export default function Contact() {
         </p>
         <div className="contact-links">
           <div className="contact-link-row">
-            <a href="mailto:hamza99ayman250@gmail.com" className="contact-link">
+            <a href="mailto:hamza.ayman.eid@gmail.com" className="contact-link">
               <span className="contact-link-label">Email</span>
-              <span className="contact-link-value">hamza99ayman250@gmail.com</span>
+              <span className="contact-link-value">hamza.ayman.eid@gmail.com</span>
             </a>
             <button
               type="button"
@@ -35,13 +36,13 @@ export default function Contact() {
               {copied ? 'Copied ✓' : 'Copy'}
             </button>
           </div>
-          <a href="https://github.com/" className="contact-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/hamzayman" className="contact-link" target="_blank" rel="noopener noreferrer">
             <span className="contact-link-label">GitHub</span>
-            <span className="contact-link-value">github.com/hamzaeid</span>
+            <span className="contact-link-value">github.com/hamzayman</span>
           </a>
-          <a href="https://linkedin.com/" className="contact-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/hamza--eid" className="contact-link" target="_blank" rel="noopener noreferrer">
             <span className="contact-link-label">LinkedIn</span>
-            <span className="contact-link-value">linkedin.com/in/hamzaeid</span>
+            <span className="contact-link-value">linkedin.com/in/hamza--eid</span>
           </a>
         </div>
       </div>
